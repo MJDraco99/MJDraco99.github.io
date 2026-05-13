@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417 166.87">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        font-family: NeverSurrender, 'Never Surrender';
+        font-size: 72px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 59.13)"><tspan x="0" y="0">RW</tspan></text>
+  <text/>
+  <line class="cls-1" x1="19" y1="83.87" x2="36" y2="106.87"/>
+  <line class="cls-1" x1="54" y1="83.87" x2="72" y2="106.87"/>
+  <line class="cls-1" x1="89" y1="83.87" x2="106" y2="106.87"/>
+</svg>
