@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.top-light {
+    height: 7%;
+    background-color: #E2E5EB;
+}
+
+.top-medium {
+    height: 12%;
+    background-color: #7E8794;
+}
+
+.middle-section {
+    display: flex;
+    flex: 1;
+}
+
+.left-blue {
+    width: 30%;
+    background-color: #3B5998;
+}
+
+.right-grey {
+    width: 70%;
+    background-color: #535E70;
+}
+
+.bottom-dark {
+    height: 10%;
+    background-color: #4A0E0E;
+}
