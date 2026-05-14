@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+  min-height: calc(100vh - 78px);
+  padding: 54px 0 24px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.logo {
+  display: block;
+  width: 105px;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  gap: 42px;
+  padding-top: 24px;
+}
+
+.nav a {
+  color: #111;
+  text-decoration: none;
+  background: #d9d9d9;
+  padding: 9px 25px;
+  font-size: 13px;
+  font-weight: 400;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  background: #bfbfbf;
+  transform: translateY(-2px);
+}
+
+.section-label {
+  margin-top: 22px;
+  margin-left: 28px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hero-wrap {
+  position: relative;
+  margin: 60px auto 0;
+  width: min(710px, 72vw);
+}
+
+.hero-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-title {
+  position: absolute;
+  right: 34px;
+  top: 34px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.arrow {
+  position: fixed;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  border-top: 1px solid #111;
+  border-left: 1px solid #111;
+  opacity: 0.7;
+}
+
+.arrow.left {
+  left: 28px;
+  transform: rotate(-45deg);
+}
+
+.arrow.right {
+  right: 28px;
+  transform: rotate(135deg);
+}
+
+.news-block {
+  display: grid;
+  grid-template-columns: 360px minmax(260px, 460px);
+  gap: 88px;
+  align-items: start;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.news-block img {
+  width: 360px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.news-copy {
+  padding-top: 6px;
+  font-size: 16px;
+  line-height: 1.22;
+  font-weight: 800;
+}
+
+.artist-grid {
+  width: min(960px, 88vw);
+  margin: 0 auto;
+  padding-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px 92px;
+}
+
+.artist-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.artist-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.artist-card:hover img {
+  transform: scale(1.04);
+}
+
+.artist-name {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.artist-card:nth-child(1) .artist-name,
+.artist-card:nth-child(2) .artist-name {
+  left: auto;
+  right: 18px;
+}
+
+.gears-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(360px, 520px);
+  gap: 58px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.product-info {
+  font-size: 16px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.product-info .spacer {
+  height: 34px;
+}
+
+.product-img {
+  width: 520px;
+  max-width: 100%;
+  display: block;
+}
+
+.cart-button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  color: #111;
+}
+
+.cart-button:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.15;
+  padding: 18px 0 24px;
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding-top: 32px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 0;
+  }
+
+  .nav a {
+    padding: 9px 18px;
+  }
+
+  .hero-wrap,
+  .artist-grid {
+    width: 100%;
+  }
+
+  .hero-img {
+    height: 360px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .news-block,
+  .gears-layout,
+  .artist-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .news-block img {
+    width: 100%;
+  }
+
+  .artist-card img {
+    height: 230px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
